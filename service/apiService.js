@@ -12,7 +12,7 @@ const apiServiceImg = axios.create({
 export const apiService = {
     getAllListImages: async() => {
         try {
-            const response = await apiServiceImg.get("/list-img");
+            const response = await apiServiceImg.get("/list");
     
             return response.data;
         } catch (error) {
